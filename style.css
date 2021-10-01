@@ -1,7 +1,47 @@
 :root{
-   
+   --primary-dark : black;
+   --primary-green : green;
 }
 
 body{
-    background-color: grey;
+    background-color: gray;
+    color: var(--primary-dark);
+}
+h1{
+    text-align: center;
+}
+label{
+    text-align: center;
+}
+#output-box{
+    text-align: center;
+    margin: 1rem;
+    border-radius: 0.5rem;
+   
+}
+
+.container{
+    width: 50%;
+  margin: auto;
+}
+
+input,label{
+    display: block;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#check-number{
+    display: block;
+    margin-top: 1rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
