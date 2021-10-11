@@ -16,11 +16,14 @@ function compareValues(sum, luckyNumber) {
 function checkBirthDateIsLucky() {
     var dob = dateOfBirth.value;
     var sum = calculateSum(dob);
-    if (sum && dob) {
+    if(luckyNumber.value > 0 && dob != ""{
+      if (sum && dob) {
         compareValues(sum, luckyNumber.value);
-    } else {
+      } else {
         outputBox.innerText = "Please Enter Both The Fields";
-    }
+     } else {
+         
+        outputBox.innerText = "Please Enter valid inputs";
 }
 
 function calculateSum(dob) {
