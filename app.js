@@ -6,7 +6,7 @@ var outputBox = document.querySelector("#output-box");
 chkNumberButton.addEventListener("click", checkBirthDateIsLucky)
 
 function compareValues(sum, luckyNumber) {
-    if (sum % luckyNumber === 0) {
+    if (sum % Number(luckyNumber.value) === 0) {
         outputBox.innerText = "Your Birthday is lucky :) ";
     } else {
         outputBox.innerText = "Your Birthday is not lucky :( ";
